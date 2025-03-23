@@ -3,7 +3,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 
 void main() {
-  runApp(MyApp())
+  runApp(MyApp());
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -76,6 +78,11 @@ class _TodoScreenState extends State<TodoScreen> {
       appBar: AppBar(title: Text("To-Do List")),
       body: Column(
         children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.asset('assets/images/1.jpg',
+                height: 150), // Ensure correct asset path
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
